@@ -2,7 +2,7 @@
 ## About
 Build a devcontainer environment without docker desktop
 
-## MacBook Settings
+## MacBook settings
 1. Install docker client
 ```
 curl https://download.docker.com/mac/static/stable/x86_64/docker-27.0.3.tgz -o docker-27.0.3.tgz
@@ -28,6 +28,15 @@ docker context use vagrant-ubuntu
 ```
 docker info
 ```
+
+## Build Vagrant environment
+cd vagrant
+vagrant up
+
+## Build proxy container
+vagrant ssh
+cd /vagrant/vagrant/docker/squid/
+docker compose up -d
 
 ## References
 https://qiita.com/moritalous/items/26b0d0bdfed051cf62cc
