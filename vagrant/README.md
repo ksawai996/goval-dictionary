@@ -2,6 +2,15 @@
 ## About
 Build a devcontainer environment without docker desktop
 
+## Build Vagrant environment
+cd vagrant
+vagrant up
+
+## Build proxy container
+vagrant ssh
+cd /vagrant/vagrant/docker/squid/
+docker compose up -d
+
 ## MacBook settings
 1. Install docker client
 ```
@@ -29,14 +38,11 @@ docker context use vagrant-ubuntu
 docker info
 ```
 
-## Build Vagrant environment
-cd vagrant
-vagrant up
-
-## Build proxy container
-vagrant ssh
-cd /vagrant/vagrant/docker/squid/
-docker compose up -d
+## Open project in VSCode Dev Containers
+1. Open VSCode
+2. Install "Remote Development" extension
+3. Click on "Reopen in container" in the lower left corner
 
 ## References
+https://code.visualstudio.com/docs/devcontainers/containers
 https://qiita.com/moritalous/items/26b0d0bdfed051cf62cc
