@@ -33,3 +33,5 @@ goval-dictionary
 *.sqlite3-journal
 tags
 /dist/
+
+.vagrant

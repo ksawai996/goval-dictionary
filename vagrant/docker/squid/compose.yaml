@@ -1,0 +1,9 @@
+services:
+  proxy:
+    image: ubuntu/squid
+    restart: always
+    ports:
+      - 3128:3128
+    volumes:
+      - ./config/squid.conf:/etc/squid/squid.conf
+      - ./config/whitelist:/etc/squid/whitelist
