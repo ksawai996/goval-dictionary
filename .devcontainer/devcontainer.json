@@ -9,7 +9,7 @@
 		"dockerfile": "../Dockerfile_test"
 	},
 	"workspaceFolder": "/workspace",
-  "workspaceMount": "source=/vagrant,target=/workspace,type=bind,consistency=cached"
+  "workspaceMount": "source=/vagrant,target=/workspace,type=bind,consistency=cached",
 
 	// "mounts": [
 	// 		"source=/vagrant,target=/workspace,type=bind,consistency=cached"
@@ -24,8 +24,15 @@
 	// "postCreateCommand": "cat /etc/os-release",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"settings": {},
 
+			"extensions": [
+					"golang.go"
+			]
+	  }
+	}
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
 }
